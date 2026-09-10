@@ -1,0 +1,4 @@
+proprietary/vendor/lib64/libsdk_sr_2.so filter=lfs diff=lfs merge=lfs -text
+proprietary/system_ext/priv-app/SettingsMoto/SettingsMoto.apk filter=lfs diff=lfs merge=lfs -text
+proprietary/product/priv-app/MotCamera5/MotCamera5.apk filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/libsdk_sr.so filter=lfs diff=lfs merge=lfs -text
