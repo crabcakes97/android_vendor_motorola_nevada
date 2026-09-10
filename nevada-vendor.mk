@@ -1599,6 +1599,9 @@ PRODUCT_PACKAGES += \
     libtfadsp_armv7A \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
+    android.hardware.media.c2@1.0_vendor \
+    android.hardware.media.c2@1.1_vendor \
+    android.hardware.media.c2@1.2_vendor \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.display.panel-V1-ndk \
     com.motorola.hardware.display.panel@1.0 \
@@ -1947,6 +1950,9 @@ PRODUCT_PACKAGES += \
     libccci_util \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
+    libcodec2_hidl@1.0_vendor \
+    libcodec2_hidl@1.1_vendor \
+    libcodec2_hidl@1.2_vendor \
     libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
