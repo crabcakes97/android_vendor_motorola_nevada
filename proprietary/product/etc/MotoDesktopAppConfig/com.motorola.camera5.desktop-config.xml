@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moto-desktop-app-config>
+    <package packageName="com.motorola.camera5"
+        restartWhenDisplayChanged="user_restart" />
+</moto-desktop-app-config>

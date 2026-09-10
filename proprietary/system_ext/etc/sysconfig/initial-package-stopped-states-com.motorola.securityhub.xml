@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2023 Motorola Mobility LLC.
+    All Rights Reserved
+    The contents of this file are Motorola Confidential Restricted (MCR).
+-->
+<config>
+    <initial-package-state package="com.motorola.securityhub" stopped="false"/>
+</config>

@@ -1,0 +1,11 @@
+<!--
+    Input:
+        motorola/hardware/interfaces/tcmd/1.0/default/motorola.hardware.tcmd@1.0-service.xml
+-->
+<manifest version="9.0" type="framework">
+    <hal format="hidl">
+        <name>motorola.hardware.tcmd</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMotTcmd/default</fqname>
+    </hal>
+</manifest>

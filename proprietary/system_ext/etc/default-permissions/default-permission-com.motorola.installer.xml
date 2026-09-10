@@ -1,0 +1,5 @@
+<exceptions>
+    <exception package="com.motorola.installer">
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+    </exception>
+</exceptions>

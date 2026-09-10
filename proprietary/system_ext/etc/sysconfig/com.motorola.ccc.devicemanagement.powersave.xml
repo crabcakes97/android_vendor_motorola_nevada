@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 Motorola Mobility Inc.
+     All Rights Reserved.
+     Motorola Mobility Confidential Restricted.
+-->
+
+<!--Provides the internet to the Devicemanagement even in data saver mode -->
+<permissions>
+    <allow-in-power-save package="com.motorola.ccc.devicemanagement" />
+    <allow-in-data-usage-save package="com.motorola.ccc.devicemanagement" />
+</permissions>

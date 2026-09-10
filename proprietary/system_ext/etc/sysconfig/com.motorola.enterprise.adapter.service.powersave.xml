@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- Enterprise Adapter service must be white-listed to always have internet
+    access while in power save mode and datasaver mode, even if it isn't in the
+    foreground. -->
+
+    <!-- Enterprise Adapter must always have network access for make request -->
+    <allow-in-power-save package="com.motorola.enterprise.adapter.service" />
+    <allow-in-data-usage-save package="com.motorola.enterprise.adapter.service" />
+</config>

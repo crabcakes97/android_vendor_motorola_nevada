@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ~ Copyright (C) 2024 Motorola Mobility, LLC.
+  ~ All Rights Reserved.
+  ~ Motorola Mobility Confidential Restricted.
+  -->
+<permissions>
+    <signature-permissions package="com.motorola.bug2go">
+        <!-- Bug2Go privileged/signature permissions -->
+        <permission name="android.permission.BLUETOOTH_STACK"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_DROPBOX_DATA" />
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.SET_DEBUG_APP"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.WRITE_SETTINGS"/>
+    </signature-permissions>
+</permissions>

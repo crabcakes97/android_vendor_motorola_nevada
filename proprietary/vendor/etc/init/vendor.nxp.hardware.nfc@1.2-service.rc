@@ -1,0 +1,24 @@
+# Motorola, vinimbp, IKSWU-4041, Adds compatibility with Tesla
+on property:ro.vendor.hw.nfc=nq && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=ese_nq && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=true && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=nxp && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+on property:ro.vendor.hw.nfc=ese_nxp && property:persist.vendor.nfc.config_file_name=*
+    start vendor.nfc_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
+    class early_hal
+    user nfc
+    group nfc
+    disabled
+    # Motorola, wangjiao, 06/02/2021, IKSWR-85914, add shutdown critical
+    shutdown critical
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<enable-disable-package>
+    <package-disable-enable-criteria package="com.motorola.enterprise.adapter.service" default_action="enable">
+        <criteria action="disable" channel="cmcc"/>
+        <criteria action="disable" channel="cucn"/>
+        <criteria action="disable" channel="ctcn"/>
+        <criteria action="disable" channel="retcn"/>
+        <criteria action="disable" channel="cbncn"/>
+    </package-disable-enable-criteria>
+</enable-disable-package>

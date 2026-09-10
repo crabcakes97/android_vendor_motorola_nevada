@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <privapp-permissions package="com.motorola.enterprise.adapter.service">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="com.motorola.permission.ENTERPRISE_ANALYTICS_NOTIFICATION"/>
+        <permission name="com.motorola.permission.SEND_RECEIVE_ENABLE_DISABLE_FILE"/>
+    </privapp-permissions>
+</permissions>

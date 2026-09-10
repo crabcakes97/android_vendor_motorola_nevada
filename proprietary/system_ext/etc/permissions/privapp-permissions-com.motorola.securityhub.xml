@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.motorola.securityhub">
+        <permission name="android.permission.READ_SAFETY_CENTER_STATUS"/>
+        <permission name="com.motorola.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

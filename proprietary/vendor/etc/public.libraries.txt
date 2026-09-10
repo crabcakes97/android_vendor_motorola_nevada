@@ -1,0 +1,12 @@
+libportrait_repair_ppl3_ocl.so
+libsdk_sr.so
+libsdk_sr_2.so
+libanc_sn.so
+libanc_sn_adapter_front_main.so
+libanc_sn_adapter_rear_main.so
+libanc_sn_adapter_front_main_2.so
+libanc_sn_adapter_rear_main_2.so
+libmotoisphidlclient.so
+libOpenCL.so
+libiqi_bridge.so
+libOpenCL.so

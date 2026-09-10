@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2022 Motorola Mobility, Inc. All Rights Reserved -->
+<enable-disable-package>
+    <package-disable-enable-criteria default_action="disable" package="com.motorola.msimsettings.overlay">
+        <criteria action="enable" channel="boost" prop="ro.product.device" prop_value="aion;lynkco;rtwo" />
+        <criteria action="enable" channel="comcast" prop="ro.product.device" prop_value="devonn;lynkco" />
+        <criteria action="enable" channel="spectrum" />
+        <criteria action="enable" channel="usc" prop="ro.product.device" prop_value="lynkco" />
+        <criteria action="enable" prop="persist.radio.multisim.config" prop_value="ss" />
+        <criteria action="enable" prop="ro.vendor.hw.dualsim" prop_value="false" />
+    </package-disable-enable-criteria>
+</enable-disable-package>

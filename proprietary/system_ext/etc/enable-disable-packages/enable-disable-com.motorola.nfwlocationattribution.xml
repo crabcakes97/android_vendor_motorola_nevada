@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<enable-disable-package>
+    <package-disable-enable-criteria package="com.motorola.nfwlocationattribution" carrierBased="true" default_action="enable">
+        <criteria action="disable" mccmnc="311480" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311481" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311482" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311483" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311484" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311485" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311486" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311487" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311488" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="311489" gid="BA01450000000000"/>
+        <criteria action="disable" mccmnc="20404" gid="BA01450000000000"/>
+    </package-disable-enable-criteria>
+</enable-disable-package>

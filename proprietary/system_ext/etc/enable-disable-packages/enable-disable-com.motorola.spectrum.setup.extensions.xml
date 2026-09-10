@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<enable-disable-package>
+    <package-disable-enable-criteria package="com.motorola.spectrum.setup.extensions" carrierBased="true" default_action="disable">
+        <criteria action="enable" channel="spectrum" />
+        <criteria action="enable" channel="retus" mccmnc="311480" gid="BA01490000000000" />
+    </package-disable-enable-criteria>
+</enable-disable-package>

@@ -1,0 +1,5 @@
+service imgtuner-hal /vendor/bin/hw/motorola.hardware.camera.imgtuner.aidl-service
+    interface aidl android.hardware.camera.imgtuner.aidl.IImageTuner/default
+    class hal
+    user camera
+    group camera vendor_apusys

@@ -1,0 +1,11 @@
+<!--
+    Input:
+        motorola/hardware/interfaces/tcmd/tcmd-aidl/default/motorola.hardware.tcmdaidl-service.xml
+-->
+<manifest version="9.0" type="framework">
+    <hal format="aidl">
+        <name>motorola.hardware.tcmdaidl</name>
+        <version>2</version>
+        <fqname>IMotTcmd/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,11 @@
+# We introduce /system_ext partition from Android R
+service mot.tcmd-aidl /system_ext/bin/hw/motorola.hardware.tcmdaidl-service
+    interface aidl motorola.hardware.tcmdaidl.IMotTcmd/default
+    class hal
+    user root
+    group root system vendor_prod_persist
+    disabled
+    oneshot
+
+on property:vendor.tcmd-aidl.start=1
+    start mot.tcmd-aidl

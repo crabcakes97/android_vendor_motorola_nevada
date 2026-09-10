@@ -1,0 +1,5 @@
+# fm hal for elna module
+service vendor.mot.fm /vendor/bin/hw/motorola.hardware.fm-service
+    class hal
+    user system
+    group system

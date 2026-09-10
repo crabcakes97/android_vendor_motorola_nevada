@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <privapp-permissions package="com.motorola.smart5g">
+        <!-- Allow smart 5g service to run as singleton in multi-user -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <!-- Allow smart 5g service to read phone state and change endc state -->
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    </privapp-permissions>
+</permissions>

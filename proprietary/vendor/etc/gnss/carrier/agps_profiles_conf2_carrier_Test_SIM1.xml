@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mtk_agps_profiles maj_ver="1" min_ver="2">
+  <!-- Refer to agps_profiles_conf2.xml for values not provided in this file -->
+
+  <cur_supl_profile name="Test_SIM1"
+      addr=""
+      port="7275"
+      tls="true"
+  />
+
+  <up_setting
+    imsi_enable="true"
+    cert_from_sdcard="true"
+    up_lppe_enable="true"
+    up_lppe_wlan_enable="true"
+    up_lppe_srn_enable="true"
+    up_lppe_sensor_enable="true"
+    up_lppe_dbh_enable="true"
+  />
+
+  <cp_setting
+    cp_lppe_enable="true"
+    cp_lppe_wlan_enable="true"
+    cp_lppe_srn_enable="true"
+    cp_lppe_sensor_enable="true"
+    cp_lppe_dbh_enable="true"
+  />
+
+</mtk_agps_profiles>

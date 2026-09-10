@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <privapp-permissions package="com.motorola.paks">
+
+        <!-- Allow listing all users and adding user restrictions -->
+        <permission name="android.permission.MANAGE_USERS"/>
+
+        <!-- Get device IMEI -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+
+        <!-- Permission to allow PAKS to write on new persist file. -->
+        <permission name="com.motorola.permission.ACCESS_PRODUCT_PERSIST"/>
+
+        <!-- Required to allow the app installs an apk -->
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+
+        <!-- Required to allow PAKS to delete an apk -->
+        <permission name="android.permission.DELETE_PACKAGES"/>
+
+        <!-- Required to allow PAKS to launch an application -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+
+        <!-- Required to add PAKS as protected package -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+
+        <!-- Required to allow PAKS to change secure settings  -->
+        <permission name="com.motorola.permission.WRITE_SECURE_SETTINGS"/>
+
+        <!-- Required to allow PAKS to install financed app for other users  -->
+        <permission name="com.android.permission.INSTALL_EXISTING_PACKAGES"/>
+
+        <!-- Required to allow PAKS to bypass VPN lockdown -->
+        <permission name="android.permission.CONTROL_VPN" />
+
+        <!-- Required to allow PAKS to ensure the financed enrollment for all users -->
+        <permission name="android.permission.REBOOT" />
+
+        <!-- Required to allow PAKS to perform factory data reset -->
+        <permission name="android.permission.MASTER_CLEAR" />
+
+        <!-- Required to bypass restricted VPN networks that may attempt to block PAKS connection -->
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
+
+    </privapp-permissions>
+</permissions>

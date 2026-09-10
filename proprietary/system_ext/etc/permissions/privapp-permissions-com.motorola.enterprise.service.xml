@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<permissions>
+    <privapp-permissions package="com.motorola.enterprise.service">
+        <permission name="com.motorola.permission.EVENT_INJECTION_SERVICE"/>
+    </privapp-permissions>
+</permissions>

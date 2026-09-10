@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ **
+ * Copyright (C) 2025 Motorola Mobility, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ *
+-->
+
+<!-- This is the feature indicating that the device support display refresh rate 3.0 settings -->
+<permissions>
+    <feature name="com.motorola.hardware.display_refresh_rate_v3" />
+</permissions>
