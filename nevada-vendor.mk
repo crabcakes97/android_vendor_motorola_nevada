@@ -1599,9 +1599,6 @@ PRODUCT_PACKAGES += \
     libtfadsp_armv7A \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
-    android.hardware.radio.config-V1-ndk_vendor \
-    android.hardware.radio.sim-V1-ndk_vendor \
-    android.hardware.security.keymint-V1-ndk_vendor \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.display.panel-V1-ndk \
     com.motorola.hardware.display.panel@1.0 \

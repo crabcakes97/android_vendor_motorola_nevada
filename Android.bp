@@ -314,88 +314,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.radio.config-V1-ndk_vendor",
-    stem: "android.hardware.radio.config-V1-ndk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.radio.config-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.radio-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.radio.sim-V1-ndk_vendor",
-    stem: "android.hardware.radio.sim-V1-ndk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.radio.sim-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.radio-V1-ndk",
-                "android.hardware.radio.config-V1-ndk_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.security.keymint-V1-ndk_vendor",
-    stem: "android.hardware.security.keymint-V1-ndk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.security.keymint-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.security.secureclock-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.fingerprints.extension@1.0",
     owner: "motorola",
     strip: {
@@ -14211,8 +14129,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/librilfusion.so",
             ],
             shared_libs: [
-                "android.hardware.radio.config-V1-ndk_vendor",
-                "android.hardware.radio.sim-V1-ndk_vendor",
+                "android.hardware.radio.config-V1-ndk",
+                "android.hardware.radio.sim-V1-ndk",
                 "libmtkrillog",
                 "libmtkcutils",
                 "libmtkhardware_legacy",
@@ -14790,7 +14708,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libtpa.so",
             ],
             shared_libs: [
-                "android.hardware.security.keymint-V1-ndk_vendor",
+                "android.hardware.security.keymint-V1-ndk",
+                "android.hardware.security.rkp-V3-ndk",
                 "libssl",
                 "libcrypto",
                 "libcutils",
@@ -14799,7 +14718,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libhidlbase",
                 "libhardware",
-                "libkeymint",
                 "libbinder_ndk",
                 "libcppbor_external",
                 "libkeymaster_messages",
@@ -29368,7 +29286,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libbinder_ndk",
                 "android.hardware.radio-V1-ndk",
-                "android.hardware.radio.sim-V1-ndk_vendor",
+                "android.hardware.radio.sim-V1-ndk",
                 "android.hardware.radio.modem-V1-ndk",
                 "vendor.mediatek.hardware.mtkradioex.sim-V1-ndk",
                 "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
