@@ -277,6 +277,7 @@ on property:ro.vendor.mtklog_internal=1
 # adbd is controlled via property triggers in init.<platform>.usb.rc
 service adbd /apex/com.android.adbd/bin/adbd --root_seclabel=u:r:su:s0
     class core
+    user root
     socket adbd seqpacket 660 system system
     disabled
     override

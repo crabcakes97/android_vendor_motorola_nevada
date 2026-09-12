@@ -8817,40 +8817,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbluetooth_audio_session_aidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_aidl_mediatek",
     owner: "motorola",
     strip: {
@@ -11043,60 +11009,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhwc2on1adapter",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhwc2on1adapter.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhwc2onfbadapter",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhwc2onfbadapter.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libsync",
                 "libc++",
                 "libc",
                 "libm",
@@ -13585,6 +13497,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpcap_mtk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpcap_mtk.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libpkm",
     owner: "motorola",
     strip: {
@@ -13600,7 +13536,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libdecrypt",
-                "libpcap",
+                "libpcap_mtk",
                 "liblog",
                 "libhidlbase",
                 "libhidltransport",
@@ -27923,15 +27859,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.usb-aidl-service.mediatek.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb-aidl-service.mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.usb.gadget-service.mediatek.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.mediatek.xml",
@@ -28085,15 +28012,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "memtrack-mediatek.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/memtrack-mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "motorola.hardware.camera.imgtuner.aidl.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.camera.imgtuner.aidl.xml",
@@ -28181,15 +28099,6 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "motorola.hardware.tcmd@1.0-service.xml",
-    owner: "motorola",
-    src: "proprietary/system_ext/etc/vintf/manifest/motorola.hardware.tcmd@1.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -28900,6 +28809,8 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hs20-osu-client",
             ],
             shared_libs: [
+                "libcrypto_shim",
+                "libshim_crypto",
                 "libcutils",
                 "libcrypto",
                 "libssl",
@@ -29215,6 +29126,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libbase",
                 "libbinder_ndk",
                 "libhidlbase",
@@ -29248,6 +29160,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk-lazy",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libbase",
                 "libbinder_ndk",
                 "libhidlbase",
@@ -29426,6 +29339,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/com.motorola.hardware.display.touch-service",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libbinder_ndk",
                 "libhidlbase",
                 "libutils",
@@ -29585,6 +29499,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/motorola.hardware.health-service",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libbase",
                 "libutils",
                 "libbinder",
@@ -29618,6 +29533,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/motorola.hardware.health.storage@1.0-service",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libbase",
                 "libhidlbase",
                 "libutils",
@@ -30627,6 +30543,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mot_tcmd",
             ],
             shared_libs: [
+                "libshim_fp",
                 "libbinder",
                 "libcutils",
                 "libhardware",
@@ -31456,6 +31373,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/vndservice",
             ],
             shared_libs: [
+                "libshim_binder",
                 "libcutils",
                 "libutils",
                 "libbinder",
@@ -31704,39 +31622,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "motorola.hardware.tcmd@1.0-service",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hw/motorola.hardware.tcmd@1.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhidlbase",
-                "libhidltransport",
-                "libhidltcmd",
-                "motorola.hardware.tcmd@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    system_ext_specific: true,
 }
 
 sh_binary {

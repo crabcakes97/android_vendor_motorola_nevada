@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nevada/proprietary/system_ext/etc/enable-disable-packages/enable-disable-com.motorola.rcsConfigService.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/enable-disable-packages/enable-disable-com.motorola.rcsConfigService.xml \
     vendor/motorola/nevada/proprietary/system_ext/etc/enable-disable-packages/enable-disable-com.motorola.spectrum.setup.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/enable-disable-packages/enable-disable-com.motorola.spectrum.setup.extensions.xml \
     vendor/motorola/nevada/proprietary/system_ext/etc/enable-disable-packages/enable-disable-com.motorola.sstservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/enable-disable-packages/enable-disable-com.motorola.sstservice.xml \
-    vendor/motorola/nevada/proprietary/system_ext/etc/init/motorola.hardware.tcmd@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/motorola.hardware.tcmd@1.0-service.rc \
     vendor/motorola/nevada/proprietary/system_ext/etc/motorola/bgintents/com.motorola.lifetimedata.bgintents.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/motorola/bgintents/com.motorola.lifetimedata.bgintents.xml \
     vendor/motorola/nevada/proprietary/system_ext/etc/nondisable/com.motorola.ccc.devicemanagement.nondisable.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.motorola.ccc.devicemanagement.nondisable.xml \
     vendor/motorola/nevada/proprietary/system_ext/etc/nondisable/com.motorola.ccc.ota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.motorola.ccc.ota.xml \
@@ -429,7 +428,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nevada/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/motorola/nevada/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/motorola/nevada/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
-    vendor/motorola/nevada/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/motorola/nevada/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc \
     vendor/motorola/nevada/proprietary/vendor/etc/init/motorola.hardware.fdrcontrol@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.fdrcontrol@1.2-service.rc \
     vendor/motorola/nevada/proprietary/vendor/etc/init/motorola.hardware.fm.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.fm.service.rc \
@@ -1922,7 +1920,6 @@ PRODUCT_PACKAGES += \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session \
     libbluetooth_audio_session_aidl_mediatek \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
@@ -1996,8 +1993,6 @@ PRODUCT_PACKAGES += \
     libhfmanager \
     libhfmanagerwrapper \
     libhidparser \
-    libhwc2on1adapter \
-    libhwc2onfbadapter \
     libhwm \
     libicd_decoder \
     libifcutils_mtk \
@@ -2555,7 +2550,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
     android.hardware.security.sharedsecret-service.trustonic.xml \
-    android.hardware.usb-aidl-service.mediatek.xml \
     android.hardware.usb.gadget-service.mediatek.xml \
     android.hardware.wifi@1.0-service.xml \
     com.motorola.hardware.display.panel-service.xml \
@@ -2573,7 +2567,6 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_1_atom_only.xml \
     manifest_rcs.xml \
-    memtrack-mediatek.xml \
     motorola.hardware.camera.imgtuner.aidl.xml \
     motorola.hardware.fm.service.xml \
     motorola.hardware.health.service.xml \
@@ -2584,7 +2577,6 @@ PRODUCT_PACKAGES += \
     sarwifi-default.xml \
     vendor.dolby.hardware.dms.xml \
     vibrator-mtk-default.xml \
-    motorola.hardware.tcmd@1.0-service.xml \
     EEReport \
     SN1X0__RF-On.txt \
     TBaseDeviceBinding \
@@ -2714,7 +2706,6 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \
-    motorola.hardware.tcmd@1.0-service \
     motsettings
 
 PRODUCT_PACKAGES += \
